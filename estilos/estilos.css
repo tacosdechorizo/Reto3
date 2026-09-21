@@ -1,0 +1,97 @@
+:root {
+    --molten-lava: #780000ff;
+    --brick-red: #c1121fff;
+    --papaya-whip: #fdf0d5ff;
+    --deep-space-blue: #003049ff;
+    --steel-blue: #669bbcff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--papaya-whip);
+    color: var(--deep-space-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    border-top: 5px solid var(--molten-lava);
+}
+
+#titulo-formulario {
+    text-align: center;
+    font-size: 24px;
+    color: var(--molten-lava);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    color: var(--deep-space-blue);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: var(--steel-blue);
+    outline: none;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.label-intereses {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--brick-red);
+    color: var(--papaya-whip);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--molten-lava);
+}
